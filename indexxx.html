@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Brain-Ring Python</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #f0f0f0; }
+        h1 { color: #2c3e50; text-align: center; }
+        h2 { color: #34495e; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 40px; }
+        .question { background: white; padding: 20px; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .question h3 { color: #2980b9; margin-top: 0; }
+        pre { background: #2c3e50; color: #ecf0f1; padding: 15px; border-radius: 5px; overflow-x: auto; }
+        .answer { background: #e8f5e9; padding: 15px; border-left: 4px solid #4caf50; margin-top: 15px; }
+        .points { float: right; background: #3498db; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; }
+        .final { background: #fff3e0; border: 2px solid #ff9800; }
+        .reflection { background: #f3e5f5; border: 2px solid #9c27b0; }
+        code { background: #ecf0f1; padding: 2px 6px; border-radius: 3px; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <h1>🧠 Brain-Ring з Python</h1>
+    <p style="text-align: center; color: #7f8c8d;">Інтерактивний турнір програмістів | 10 клас</p>
+    
+    <h2>🔮 Раунд: Що виведе код?</h2>
+    
+    <div class="question">
+        <span class="points">1 бал</span>
+        <h3>Питання 1</h3>
+        <pre>a = [1, 2, 3]
+print(a * 2)</pre>
+        <div class="answer">
+            <strong>Відповідь:</strong> <code>[1, 2, 3, 1, 2, 3]</code><br>
+            <em>Пояснення: Оператор * для списків повторює список</em>
+        </div>
+    </div>
+    
+    <div class="question">
+        <span class="points">2 бали</span>
+        <h3>Питання 2</h3>
+        <pre>a = [1, 2, 3]
+b = a
+a.append(4)
+print(b)</pre>
+        <div class="answer">
+            <strong>Відповідь:</strong> <code>[1, 2, 3, 4]</code><br>
+            <em>Пояснення: b посилається на той самий об'єкт, що й a</em>
+        </div>
+    </div>
+    
+    <div class="question">
+        <span class="points">1 бал</span>
+        <h3>Питання 3</h3>
+        <pre>print([i for i in range(5)])</pre>
+        <div class="answer">
+            <strong>Відповідь:</strong> <code>[0, 1, 2, 3, 4]</code><br>
+            <em>Пояснення: List comprehension створює список від 0 до 4</em>
+        </div>
+    </div>
+    
+    <div class="question">
+        <span class="points">1 бал</span>
+        <h3>Питання 4</h3>
+        <pre>print(list(range(2, 10, 2)))</pre>
+        <div class="answer">
+            <strong>Відповідь:</strong> <code>[2, 4, 6, 8]</code><br>
+            <em>Пояснення: range(початок, кінець, крок)</em>
+        </div>
+    </div>
+    
+    <div class="question">
+        <span class="points">2 бали</span>
+        <h3>Питання 5</h3>
+        <pre>print("Python"[::-1])</pre>
+        <div class="answer">
+            <strong>Відповідь:</strong> <code>nohtyP</code><br>
+            <em>Пояснення: [::-1] розгортає рядок</em>
+        </div>
+    </div>
+    
+    <div class="question">
+        <span class="points">1 бал</span>
+        <h3>Питання 6</h3>
+        <pre>nums = [1, 2, 3]
+print(sum(nums))</pre>
+        <div class="answer">
+            <strong>Відповідь:</strong> <code>6</code><br>
+            <em>Пояснення: sum() обчислює суму елементів</em>
+        </div>
+    </div>
+    
+    <div class="question">
+        <span class="points">1 бал</span>
+        <h3>Питання 7</h3>
+        <pre>a = [3, 1, 2]
+a.sort()
+print(a)</pre>
+<div class="answer">
+            <strong>Відповідь:</strong> <code>[1, 2, 3]</code><br>
+            <em>Пояснення: sort() сортує список на місці</em>
+        </div>
+    </div>
+    
+    <div class="question">
+        <span class="points">2 бали</span>
+        <h3>Питання 8</h3>
+        <pre>a = [1, 2, 3]
+print(len(a) * a[0])</pre>
+        <div class="answer">
+            <strong>Відповідь:</strong> <code>3</code><br>
+            <em>Пояснення: len(a)=3, a[0]=1, 3*1=3</em>
+        </div>
+    </div>
+    
+    <div class="question">
+        <span class="points">2 бали</span>
+        <h3>Питання 9</h3>
+        <pre>print([i*i for i in range(4)])</pre>
+        <div class="answer">
+            <strong>Відповідь:</strong> <code>[0, 1, 4, 9]</code><br>
+            <em>Пояснення: Квадрати чисел від 0 до 3</em>
+        </div>
+    </div>
+    
+    <div class="question">
+        <span class="points">2 бали</span>
+        <h3>Питання 10</h3>
+        <pre>nums = [1, 2, 3, 4]
+print(nums[-2])</pre>
+        <div class="answer">
+            <strong>Відповідь:</strong> <code>3</code><br>
+            <em>Пояснення: Від'ємні індекси рахують з кінця</em>
+        </div>
+    </div>
+    
+    <h2>⚡️ Алгоритмічні задачі</h2>
+    
+    <div class="question">
+        <span class="points">2 бали</span>
+        <h3>Задача 1: Квадрати чисел</h3>
+        <p>Створіть список квадратів чисел від 1 до 10</p>
+        <div class="answer">
+            <strong>Розв'язок:</strong> <code>[x**2 for x in range(1, 11)]</code>
+        </div>
+    </div>
+    
+    <div class="question">
+        <span class="points">2 бали</span>
+        <h3>Задача 2: Сума елементів</h3>
+        <p>Знайдіть суму всіх елементів списку без sum()</p>
+        <div class="answer">
+            <strong>Розв'язок:</strong>
+            <pre>total = 0
+for x in lst:
+    total += x</pre>
+        </div>
+    </div>
+    
+    <div class="question">
+        <span class="points">2 бали</span>
+        <h3>Задача 3: Парні числа</h3>
+        <p>Виведіть тільки парні числа зі списку</p>
+        <div class="answer">
+            <strong>Розв'язок:</strong> <code>[x for x in lst if x % 2 == 0]</code>
+        </div>
+    </div>
+    
+    <div class="question">
+        <span class="points">3 бали</span>
+        <h3>Задача 4: Максимум без max()</h3>
+        <p>Знайдіть максимальний елемент без max()</p>
+        <div class="answer">
+            <strong>Розв'язок:</strong>
+            <pre>max_val = lst[0]
+for x in lst:
+    if x > max_val:
+        max_val = x</pre>
+        </div>
+    </div>
+    
+    <div class="question">
+        <span class="points">2 бали</span>
+        <h3>Задача 5: Елементи > 5</h3>
+        <p>Підрахуйте кількість елементів > 5</p>
+        <div class="answer">
+            <strong>Розв'язок:</strong> <code>len([x for x in lst if x > 5])</code>
+        </div>
+    </div>
+    
+    <div class="question">
+        <span class="points">2 бали</span>
+        <h3>Задача 6: Довжини слів</h3>
+        <p>Створіть список довжин слів</p>
+        <div class="answer">
+            <strong>Розв'язок:</strong> <code>[len(word) for word in words]</code>
+        </div>
+    </div>
+    
+    <div class="question">
+        <span class="points">3 бали</span>
+        <h3>Задача 7: Видалення дублікатів</h3>
+        <p>Видаліть дублікати зі списку</p>
+        <div class="answer">
+            <strong>Розв'язок:</strong> <code>list(set(lst))</code>
+        </div>
+    </div>
+    
+    <div class="question">
+        <span class="points">2 бали</span>
+        <h3>Задача 8: Розворот без reverse()</h3>
+        <p>Розверніть список без reverse()</p>
+        <div class="answer">
+            <strong>Розв'язок:</strong> <code>lst[::-1]</code>
+        </div>
+    </div>
+    
+    <div class="question">
+        <span class="points">4 бали</span>
+        <h3>Задача 9: Друге найбільше</h3>
+        <p>Знайдіть друге найбільше число</p>
+        <div class="answer">
+            <strong>Розв'язок:</strong> <code>sorted(lst)[-2]</code>
+        </div>
+    </div>
+    
+    <div class="question">
+        <span class="points">2 бали</span>
+<h3>Задача 10: Тільки додатні</h3>
+        <p>Створіть список тільки з додатних чисел</p>
+        <div class="answer">
+            <strong>Розв'язок:</strong> <code>[x for x in lst if x > 0]</code>
+        </div>
+    </div>
+    
+    <h2>🏆 Фінал</h2>
+    
+    <div class="question final">
+        <span class="points">5 балів</span>
+        <h3>Фінальне завдання</h3>
+        <p><strong>Завдання:</strong> Знайдіть суму всіх парних чисел у списку</p>
+        <p><strong>Приклад:</strong> [1, 2, 3, 4, 5, 6] → 12 (2+4+6)</p>
+        <div class="answer">
+            <strong>Можливі розв'язки:</strong>
+            <pre># Варіант 1
+sum(x for x in lst if x % 2 == 0)
+
+# Варіант 2
+sum([x for x in lst if x % 2 == 0])
+
+# Варіант 3
+sum(filter(lambda x: x % 2 == 0, lst))</pre>
+        </div>
+    </div>
+    
+    <h2>🤔 Рефлексія</h2>
+    
+    <div class="question reflection">
+        <h3>❓ Що було складно?</h3>
+        <ul>
+            <li>Розуміння посилань на списки?</li>
+            <li>List comprehensions?</li>
+            <li>Від'ємні індекси?</li>
+            <li>Алгоритмічне мислення?</li>
+        </ul>
+        
+        <h3>⭐️ Що було найцікавіше?</h3>
+        <ul>
+            <li>Операції зі списками?</li>
+            <li>Зрізи [::-1]?</li>
+            <li>Фільтрація даних?</li>
+            <li>Командна робота?</li>
+        </ul>
+        
+        <h3>🎯 Що розв'язати ще?</h3>
+        <ul>
+            <li>Рядки та методи str?</li>
+            <li>Словники (dict)?</li>
+            <li>Функції та рекурсію?</li>
+            <li>Роботу з файлами?</li>
+        </ul>
+    </div>
+    
+    <footer style="text-align: center; margin-top: 50px; padding: 20px; color: #7f8c8d;">
+        <p>Brain-Ring з Python © 2025</p>
+    </footer>
+</body>
+</html>
